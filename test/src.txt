@@ -48,7 +48,6 @@ Urxvt*borderLess: true
 ! colourscheme
 !------------------------------------------------------
 themeterm.start: on
-themeterm.end: on
 !---------------------------------------------------------
 
 ! padding

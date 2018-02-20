@@ -1,7 +1,7 @@
 #!/bin/bash
 
-CONFIG_FILE="/home/han/Personal/termtheme/test/src.txt"
-THEME_FILE="/home/han/Personal/termtheme/test/themes.grace"
+CONFIG_FILE="/home/han/Projects/termtheme/test/src.txt"
+THEME_FILE="/home/han/Projects/termtheme/test/themes.grace"
 usage="$0 [theme] [optional flags]"
 args=$#
 
@@ -18,7 +18,11 @@ function change_theme {
 	
 	# parse theme file
 	theme_start_line=$(grep -nr $1 $THEME_FILE | awk -F: '{print $1}')
-	sed -n 's/> ${$1}/'  
+	# get endline, if returns nothing assume end of file 
+	OUTPUT=$(tail -n +$theme_start_line $THEME_FILE | grep -i ">")
+
+
+
 }
 
 
