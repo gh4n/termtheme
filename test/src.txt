@@ -1,5 +1,3 @@
-! Xresources
-
 !======================================================
 ! Rofi Configuration (Grace Han)
 !======================================================
@@ -14,54 +12,55 @@ rofi.color-window:      argb:dc111111, argb:dc111111
 !----------------------------------------------------------------------------------
 ! State:                'bg',          'fg',   'bgalt',       'hlbg',        'hlfg'
 !----------------------------------------------------------------------------------
-rofi.color-normal:      argb:00333333, #ffffff, argb:00333333, argb:00333333, argb:ffefa211
-rofi.color-urgent:      argb:00333333, #ffffff, argb:00333333, argb:00333333, argb:ffefa211
-rofi.color-active:      argb:00333333, #ffffff, argb:00333333, argb:00333333, argb:ffefa211
-rofi.separator-style:   dash
-rofi.fullscreen:        true
-rofi.padding:           130
+rofi.color-normal:      argb:00333333, #ffffff, argb:00333333, argb:00333333, #7778b7
+rofi.color-urgent:      argb:00333333, #ffffff, argb:00333333, argb:00333333, #7778b7
+rofi.color-active:      argb:00333333, #ffffff, argb:00333333, argb:00333333, #7778b7
+rofi.separator-style:	solid
+rofi.fullscreen:        false
+rofi.padding:           50
 rofi.hide-scrollbar:    true
+rofi.lines: 		5
 rofi.line-margin:       5
-rofi.fake-transparency: false
+!rofi.fake-transparency: true 
 rofi.yoffset:           0
 rofi.xoffset:           0
-rofi.width:             1366
-rofi.opacity:           90
-rofi.font:		Inconsolata Regular 24
+rofi.width:             30
+!rofi.opacity:           0
+rofi.font:	        DejaVu Sans Mono 32
 
 
 !======================================================
 ! Urxvt Configuration (Grace Han)
 !======================================================
 
-! fonts
-URxvt.font: xft:hack:regular:size=9:antialias=true
+Xft.dpi: 180
 
-! scrollbar
-URxvt.scrollBar: false
+URxvt.depth:                32
+URxvt.geometry:             108x33
+URxvt.loginShell:           true
+URxvt.internalBorder:       30
+URxvt.lineSpace:            0
+URxvt*saveLines: 12000
 
-! borders
-Urxvt*borderLess: true
+! font
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=28
+URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=28
 
+! scrollbar - true (default) or false
+URxvt*scrollBar: false
 
 !------------------------------------------------------
 ! colourscheme
-!------------------------------------------------------
-themeterm.start: on
+! -----------------------------------------------------
+
+themeterm.start: set
+
+!---------------------------------------------------------
+! transparency
 !---------------------------------------------------------
 
-! padding
-URxvt*internalBorder: 30
-
-! transparency
 URxvt.transparent: true
-URxvt.tintColor: white 
-URxvt.shading: 15
-
-
-
-
-
-
+URxvt.tintColor: white
+URxvt.shading: 25 
 
 
