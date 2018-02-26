@@ -39,8 +39,10 @@ function change_theme {
 
 	# copy and paste code
 	theme=$(sed -n "${theme_start_line}, ${theme_end_line}p" $THEME_FILE)
-	sed '${start_line} a ${theme}' $CONFIG_FILE
-	
+#	sed '${start_line} a ${theme}' $CONFIG_FILE
+	echo "$theme_start_line"
+	echo "$theme_end_line"
+	echo "$theme"	
 
 	# refresh config file
 	xrdb $CONFIG_FILE
